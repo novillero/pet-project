@@ -1,0 +1,70 @@
+site_name: Мой пет-проект
+site_description: Пет-проект по мастер-классу
+
+theme:
+  name: material
+  logo: images/logo.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+  language: ru
+  palette:
+    # Настройки светлой темы
+    - scheme: default 
+      toggle:
+        icon: material/weather-sunny # Иконка для активации светлой темы
+        name: Выключить солнышко # Всплывающий текст-подсказка
+      primary: cyan # Основной цвет
+      accent: blue # Акцентный цвет
+      # вы можете использовать любой цвет из списка: 
+      # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
+      # green; light green; lime; yellow; amber; orange; deep orange; brown; 
+      # grey; blue grey; black; white
+
+    # Настройки тёмной темы
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Позвать солнышко
+      primary: brown
+      accent: blue
+
+  features: # настройки функциональностей темы
+    #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
+    - navigation.path # Хлебные крошки
+    - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
+    #- navigation.tabs # Верхнее меню
+    #- navigation.tabs.sticky # Фиксация верхнего меню
+    - navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
+    - toc.integrate # Фиксирует оглавление страницы в левом меню
+    - navigation.instant # Функция быстрой загрузки страниц
+    - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
+    - search.suggest # Подсказки при вводе поискового запроса
+    - search.highlight # Подсветка результатов поиска в тексте страницы
+    - content.code.copy # Кнопка копирования в блоке кода
+
+nav:
+  - Главная страница: index.md
+  - Пошаговые инструкции:
+    - instructions/index.md
+    - Установка MkDocs: instructions/mkdocs-install.md
+    - PIP: pip.md
+
+markdown_extensions:
+  - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
+  - footnotes # Поддержка встроенных сносок на страницах
+  - attr_list # Использование html-атрибутов и CSS в элементах markdown
+  - md_in_html # Поддержка markdown внутри html
+  - def_list # Поддержка списков определений
+  - pymdownx.tabbed: # Использование вкладок (табов)
+      alternate_style: true
+  - pymdownx.details # Использование спойлеров (катов)
+  - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
+      anchor_linenums: true
+  - pymdownx.superfences # Поддержка вложенных блоков кода
+  - pymdownx.emoji: # Иконки и эмодзи
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
