@@ -45,7 +45,6 @@ theme:
 
 nav:
   - Главная страница: index.md
-  - Главная страница: index.md
   - Инструкции:
     - instructions/index.md
     - Firewall: instructions/firewall.md
