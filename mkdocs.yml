@@ -36,7 +36,7 @@ theme:
     #- navigation.tabs # Верхнее меню
     #- navigation.tabs.sticky # Фиксация верхнего меню
     - navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
-    - toc.integrate # Фиксирует оглавление страницы в левом меню
+    #- toc.integrate # Фиксирует оглавление страницы в левом меню
     - navigation.instant # Функция быстрой загрузки страниц
     - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
     - search.suggest # Подсказки при вводе поискового запроса
@@ -73,3 +73,10 @@ markdown_extensions:
 
 plugins:
   - search
+  - tags:
+      tags_allowed:
+      - портфолио
+      - manuals
+      - rules
+      - helps
+  - glightbox
