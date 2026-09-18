@@ -45,10 +45,15 @@ theme:
 
 nav:
   - Главная страница: index.md
-  - Пошаговые инструкции:
+  - Главная страница: index.md
+  - Инструкции:
     - instructions/index.md
+    - Firewall: instructions/firewall.md
     - Установка MkDocs: instructions/mkdocs-install.md
-    - PIP: pip.md
+  - Концепции:
+    - About GIT: concepts/about-git.md
+  - Регламенты:
+    - Стайлгайд: rules/styleguide.md
 
 markdown_extensions:
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
