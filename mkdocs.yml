@@ -53,6 +53,9 @@ nav:
     - About GIT: concepts/about-git.md
   - Регламенты:
     - Стайлгайд: rules/styleguide.md
+  - Спецификации:
+    - Swagger: api/swagger.md
+    - Redoc: api/redoc.md
 
 markdown_extensions:
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -79,3 +82,5 @@ plugins:
       - rules
       - helps
   - glightbox
+  - swagger-ui-tag
+  - redoc-tag
