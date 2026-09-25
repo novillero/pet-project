@@ -5,7 +5,7 @@ theme:
   name: material
   logo: images/logo.svg
   font:
-    text: Roboto
+    text: Roboto Mono
     code: Roboto Mono
   language: ru
   palette:
@@ -87,3 +87,6 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+
+extra_css:
+  - stylesheets/extra.css
