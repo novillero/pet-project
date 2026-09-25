@@ -4,3 +4,7 @@
 
 !!! note "Примечание"
     Это учебный проект!
+
+--8<-- "docs/concepts/about-git.md:img"
+
+--8<-- "docs/diagram.md:dia"

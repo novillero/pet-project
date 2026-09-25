@@ -1,5 +1,8 @@
 # Диаграмма последовательности
 
+--8<-- "source:portfolio"
+
+# --8<-- [start:dia]
 ```puml
 @startuml
 actor Пользователь as user
@@ -25,3 +28,4 @@ end alt
 
 @enduml
 ```
+# --8<-- [end:dia]
